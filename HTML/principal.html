@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Inscripción a cursos</title>
+        </head>
+        <body>
+            <header>
+                <h1>
+                    <br>
+                    Inscripción en Cursos de Perfeccionamiento y emisión de Certificados
+                    <br>
+                </h1>
+            </header>
+            <section>
+                <h2>Selección de cursos</h2>
+                <p>Seleccione uno de los cursos actualmente disponibles</p>
+                <form action="inscripcion.html" method="get">
+                    <select name="curso">
+                        <option value="curso1">Curso de postgrado Nº1</option>
+                        <option value="curso2">Curso de postgrado Nº2</option>
+                        <option value="curso3">Curso de postgrado Nº3</option>
+                        <option value="curso4">Curso de postgrado Nº4</option>
+                        <option value="curso5">Curso de postgrado Nº5</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="aceptar">
+                    <br><br><br><br>
+                </form>
+            </section>
+            <section>
+                <h2>Administradores</h2>
+                <form action="inicioSesionAdm.html" method="post">
+                    <fieldset>
+                        <legend>Iniciar sesión como administrador</legend>
+                        <label for="usuario">Usuario</label>
+                        <br>
+                        <input type="text" id="usuario" name="usuario" maxlength="10" required>
+                        <br><br>
+                        <label for="contraseña">Contraseña</label>
+                        <br>
+                        <input type="password" id="contraseña" name="contraseña" required>
+                        <br><br>
+                        <input type="submit" value="Aceptar">
+                        <br>
+                    </fieldset>
+                </form>
+            </section>
+            <footer>
+                <hr>
+                <p>Facultad de Tecnología y Ciencias Aplicadas - U.N.Ca</p>
+                <a href="http://www.unca.edu.ar/index.html"><img src="unca_logo.png" alt="logotipoUnca" width="150"></a>
+                <a href="http://tecno.unca.edu.ar"><img src="LogoFTCA-256x300.png" alt="logotipoTecno" width="65"></a>   
+            </footer>
+        </body>
+    </html>

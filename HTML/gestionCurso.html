@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Inscripción a cursos - Gestion de cursos</title>
+        </head>
+        <body>
+            <header>
+                <h1>
+                    <br>
+                     Inscripción en Cursos de Perfeccionamiento y emisión de Certificados
+                    <br>
+                </h1>
+            </header>
+            <section>
+                <h2>Gestión de cursos</h2>
+                <p>Ingrese los datos del nuevo curso</p>
+                <form action="resultadoGestionCurso.html" method="post">
+                    <fieldset>
+                        <legend>Datos del curso</legend>
+                        <label for="nombreCurso">Nombre de curso</label>
+                        <input type="text" id="nombreCurso" name="nombreCurso" maxlength="100" required>
+                        <br><br>
+                        <label for="fechaDesde">Fecha desde:</label>
+                        <input type="date" id="fechaDesde" name="fechaDesde" required>
+                        <br><br>
+                        <label for="fechaHasta">Fecha hasta:</label>
+                        <input type="date" id="fechaHasta" name="fechaHasta" required>
+                        <br><br>
+                        <label for="cantidadHoras">Cantidad de horas</label>
+                        <input type="number" id="cantidadHoras" name="cantidadHoras" min="2" max="999" required>
+                        <br><br>
+                        <label for="lugarARealizar">Lugar a realizar</label>
+                        <input type="text" id="lugarARealizar" name="lugarARealizar" maxlength="100" required>
+                        <br><br>
+                        <label for="horarios">Horarios</label>
+                        <input type="text" id="horarios" name="horarios" maxlength="100" required>
+                        <br><br>
+                        <label for="fechaLimiteInscripcion">Fecha límite de inscripción</label>
+                        <input type="date" id="fechaLimiteInscripcion" name="fechaLimiteInscripcion" required>
+                        <br><br>
+                        <label for="fechaCertificado">Fecha del certificado</label>
+                        <input type="date" id="fechaCertificado" name="fechaCertificado" required>
+                        <br><br>
+                        <fieldset>
+                            <legend>Autoridades Certificantes</legend>
+                            <label for="cantidadAut">Cantidad</label>
+                            <input type=number id="cantidadAut" name="cantidadAut" required>
+                            <br><br>
+                            <label for="apellidoAut">Apellido</label>
+                            <input type="text" id="apellidoAut" name="apellidoAut" required>
+                            <br><br>
+                            <label for="nombreAut">Nombre</label>
+                            <input type="text" id="nombreAut" name="nombreAut" required>
+                            <br><br>
+                            <label for="cargoAut">Cargo</label>
+                            <input type="text" id="cargoAut" name="cargoAut" required>
+                            <br><br>
+                            <label for="firmaAut">Firma</label>
+                            <input type="file" id="firmaAut" name="firmaAut" required>
+                        </fieldset>
+                        <br><br>
+                        <label for="costoCurso">Costo del curso</label>
+                        <input type="number" id="costoCurso" name="costoCurso" min="0" required>
+                        <br><br>
+                        <fieldset>
+                            <legend>Expositores</legend>
+                            <label for="cantidadExp">Cantidad</label>
+                            <input type=number id="cantidadExp" name="cantidadExp" required>
+                            <br><br>
+                            <label for="apellidoExp">Apellido</label>
+                            <input type="text" id="apellidoExp" name="apellidoExp" required>
+                            <br><br>
+                            <label for="nombreExp">Nombre</label>
+                            <input type="text" id="nombreExp" name="nombreExp" required>
+                            <br><br>
+                            <label for="dniExp">D.N.I.</label>
+                            <input type="text" id="dniExp" name="dniExp" required>
+                            <br><br>
+                            <label for="tituloExp">Título</label>
+                            <input type="text" id="tituloExp" name="tituloExp" required>
+                        </fieldset>
+                        <br><br>
+                        <label for="cupoMaximo">Cupo máximo</label>
+                        <input type="number" id="cupoMaximo" name="cupoMaximo" min="1" required>
+                        <br><br>
+                        <label for="cupoMinimo">Cupo mínimo</label>
+                        <input type="number" id="cupoMinimo" name="cupoMinimo" min="1" required>
+                        <br><br>
+                        <input type="submit" value="Agregar curso">
+                        <input type="reset" value="Nuevo curso">
+                        <input type="submit" value="Aceptar">
+                    </fieldset>
+
+                </form>
+            </section>
+            <footer>
+                <hr>
+                <p>Facultad de Tecnología y Ciencias Aplicadas - U.N.Ca</p>
+                <a href="http://www.unca.edu.ar/index.html"><img src="unca_logo.png" alt="logotipoUnca" width="150"></a>
+                <a href="http://tecno.unca.edu.ar"><img src="LogoFTCA-256x300.png" alt="logotipoTecno" width="65"></a>   
+            </footer>
+        </body>
+    </html>
