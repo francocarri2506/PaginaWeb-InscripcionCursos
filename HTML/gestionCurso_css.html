@@ -7,6 +7,8 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="CSS/estilos.css">
+            <script src="JS\validar_campos.js"></script>
+
             <title>Inscripción a cursos - Gestion de cursos</title>
         </head>
         <body>
@@ -19,7 +21,7 @@
                 <div class="container">
                     <h2>Gestión de cursos</h2>
                 </div>
-                <form action="resultadoGestionCurso.html" method="post">
+                <form action="resultadoGestionCurso.html" method="post" onsubmit="return validar()">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
